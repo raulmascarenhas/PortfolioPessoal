@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contato</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .form-container {
+            width: 60%;
+        }
+        
+        .map-container {
+            width: 40%;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li>
+                <a href="index.html"> Home </a>
+                <a href="contato.html"> Contato </a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+
+    <main>
+        <h1 class="center cor_t">Entre em contato comigo</h1>
+        <div class="container">
+            <div class="form-container">
+                <form>
+                    <label for="nome">Nome:</label> <br>
+                    <input type="text" id="nome" onkeyup="validaNome()">
+                    <div id="txtNome"></div>
+                    <br>
+                    <label for="telefone">Telefone:</label> <br>
+                    <input type="phone" id="telefone" onkeyup="validaTelefone()">
+                    <div id="txtTelefone"></div>
+                    <br>
+                    <label for="email">E-mail:</label> <br>
+                    <input type="email" id="email" onkeyup="validaEmail()">
+                    <div id="txtEmail"></div>
+                    <br>
+                    <label for="assunto">Assunto:</label> <br>
+                    <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                    <br>
+                    <br>
+                    <button>Enviar</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <h2>Endereço:</h2>
+                <p>São José dos Campos/SP</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117359.0663016085!2d-45.863012749999996!3d-23.189506249999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bb3858cc2e7%3A0xba25a33168f8c1!2zU8OjbyBKb3PDqSBkb3MgQ2FtcG9zLCBTUA!5e0!3m2!1spt-BR!2sbr!4v1686584971441!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <p>Midias Sociais e Portfólio:</p>
+        <div class="container">
+            <a href="https://www.linkedin.com/in/raul-mascarenhas/" target="_blank">
+                <img class="tm-social p30" src="https://img1.gratispng.com/20180610/pax/kisspng-linkedin-corporation-social-media-logo-business-ca-hastings-county-5b1d59c67cea33.1381192015286501825117.jpg" alt="Linkedin">
+            </a>
+           
+            <a href="https://www.instagram.com/rhmdeassis/" target="_blank">
+                <img class="tm-social p30" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/raulmascarenhas" target="_blank">
+                <img class="tm-social p30" src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png" alt="GitHub">
+            </a>
+
+
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p class="center">Todos os direitos reservados: Raul Mascarenhas - 2023 &copy;</p>
+    </footer>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
